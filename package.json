@@ -1,0 +1,42 @@
+{
+    "name": "mongo-s3-backup",
+    "description": "A script to backup your MongoDB databases to Amazon S3",
+    "version": "0.0.1",
+    "main": "app.js",
+    "license": "GPL-3.0",
+    "author": "Hiroki Yoshida",
+    "scripts": {
+        "pretest": "gulp",
+        "test": "istanbul cover node_modules/mocha/bin/_mocha",
+        "prestart": "gulp",
+        "start": "node bin/app.js",
+        "build": "gulp"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.6.15",
+        "dotenv": "^2.0.0",
+        "moment": "^2.15.2",
+        "mongoose": "4.9.7",
+        "winston": "^2.3.0"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.0.1",
+        "@types/express": "^4.0.36",
+        "@types/mocha": "^2.2.32",
+        "@types/mongoose": "^4.7.18",
+        "@types/node": "^8.0.17",
+        "@types/superagent": "^3.5.3",
+        "@types/winston": "^0.0.29",
+        "aws-sdk-mock": "^1.5.0",
+        "chai": "^3.5.0",
+        "coveralls": "^2.11.14",
+        "gulp": "^3.9.1",
+        "gulp-sourcemaps": "^2.2.0",
+        "gulp-typescript": "^3.1.2",
+        "istanbul": "1.0.0-alpha.2",
+        "mocha": "^3.1.2",
+        "tslint": "^3.15.1",
+        "typescript": "^2.4.2",
+        "vinyl-fs": "^2.4.4"
+    }
+}
